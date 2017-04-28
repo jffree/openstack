@@ -11,22 +11,22 @@
 # OpenStack API is version 2.0. For example, your cloud provider may implement
 # Image API v1.1, Block Storage API v2, and Compute API v2.0. OS_AUTH_URL is
 # only for the Identity API served through keystone.
-export OS_AUTH_URL=http://10.5.50.3:5000/v2.0
+export OS_AUTH_URL=http://172.16.100.106:5000/v2.0
 
 # With the addition of Keystone we have standardized on the term **tenant**
 # as the entity that owns the resources.
-export OS_TENANT_ID=abafb59666954e4b903f648b44bfa6fc
-export OS_TENANT_NAME="cloudfoundry"
-export OS_PROJECT_NAME="cloudfoundry"
+export OS_TENANT_ID=d4edcc21aaca452dbc79e7a6056e53bb
+export OS_TENANT_NAME="admin"
+export OS_PROJECT_NAME="admin"
 
 # In addition to the owning entity (tenant), OpenStack stores the entity
 # performing the action as the **user**.
-export OS_USERNAME="devops"
+export OS_USERNAME="admin"
 
 # With Keystone you pass the keystone password.
 #echo "Please enter your OpenStack Password: "
 #read -sr OS_PASSWORD_INPUT
-export OS_PASSWORD=devops
+export OS_PASSWORD=abc123
 
 # If your configuration has multiple regions, we set that information here.
 # OS_REGION_NAME is optional and only valid in certain environments.
